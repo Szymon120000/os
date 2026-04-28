@@ -96,6 +96,10 @@ all: $(EFI_BIN)
 help:
 	@echo Targets: all, esp, espimg, iso, fulliso, run, clean
 
+.PHONY: all esp run clean
+
+all: $(EFI_BIN)
+
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
